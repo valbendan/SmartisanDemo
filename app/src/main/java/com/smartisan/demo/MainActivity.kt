@@ -1,5 +1,6 @@
 package com.smartisan.demo
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -18,10 +19,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onStart() {
         super.onStart()
         val wv = findViewById<WebView>(R.id.web_view)
         requireNotNull(wv)
+        wv.settings.javaScriptEnabled = true
         wv.loadUrl("https://dabaichi.hackernav.com")
     }
 

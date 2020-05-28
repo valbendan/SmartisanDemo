@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".WebDemo">
 
+    <WebView
+        android:id="@+id/wv_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
