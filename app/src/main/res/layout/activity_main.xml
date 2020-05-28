@@ -7,6 +7,14 @@
     tools:context=".MainActivity">
 
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="newPage"
+        android:text="新页面">
+
+    </Button>
+
     <WebView
         android:id="@+id/web_view"
         android:layout_width="match_parent"

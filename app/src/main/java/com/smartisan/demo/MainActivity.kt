@@ -1,10 +1,12 @@
 package com.smartisan.demo
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.webkit.WebView
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -37,5 +39,9 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    fun newPage(view: View?) {
+        startActivity(Intent(this, WebDemo::class.java))
     }
 }
