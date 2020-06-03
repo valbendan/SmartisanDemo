@@ -1,4 +1,4 @@
-# 锤子手机系统自动收集数据
+# 锤子手机系统自动收集数据 ![Android CI](https://github.com/valbendan/SmartisanDemo/workflows/Android%20CI/badge.svg)
 
 
 会检测有没有密码
